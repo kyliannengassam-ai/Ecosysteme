@@ -30,8 +30,12 @@ void GameEngine::Run() {
         auto currentTime = std::chrono::high_resolution_clock::now(); 
         std::chrono::duration<float> elapsed = currentTime - mLastUpdateTime; 
         mLastUpdateTime = currentTime; 
-        float deltaTime = elapsed.count(); 
+
+        float deltaTime = elapsed.count();
+
         HandleEvents(); 
+
+        
         if (!mIsPaused) { 
             Update(deltaTime * mTimeScale); 
             SDL_Delay(16);

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Entity.h"
-#include "Structs.hpp"
+#include "Structs.h"
 #include <vector>
 #include <memory>
 #include <random>
